@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Biblioteca da Escola</title>
+</head>
+
+<body>
+    <h1>Cadastro de aluno</h1>
+    <form id="alunoForm">
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" title="Nome do aluno" placeholder="Digite seu nome" size=50/><br><br>
+        <label for="matricula">Matrícula</label>
+        <input id="matricula" type="number" title="Número da matrícula do aluno" placeholder="Digite sua matrícula" 
+            size=10/><br><br>
+        <label for="cpf">CPF</label>
+        <input id="cpf" type="text" placeholder="Digite seu CPF" title="CPF do aluno" /><br><br>
+        <input id="submit" type="submit" title="Cadastrar aluno" value="Cadastrar" onclick="exbirNome()"></input>
+    </form>
+</body>
+
+<script>
+    function exbirNome() {
+        let nome = document.getElementById("nome").value;
+        alert(nome + " é um bom companheiro!!")
+    }
+</script>
+
+</html>
